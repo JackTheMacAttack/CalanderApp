@@ -1,0 +1,106 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+  height: 640px;
+}
+
+.calendar-date {
+  background-color: #f0f0f0;
+  padding: 8px;
+  text-align: center;
+}
+
+.holiday {
+  background-color: #ff9999;
+}
+
+.buttonBox {
+  display: flex;
+  width: 640px;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.calendarButton {
+  background-color: #f0f0f0;
+  padding: 8px;
+  border: none;
+  text-align: center;
+  width: 200px;
+  margin: 10px;
+}
+
+.Module {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.moduleHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 200px;
+}
+
+.moduleHeader button {
+  border-radius: 20px;
+  width: 100px;
+  height: 25px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+}
+
+.moduleBody {
+  background-color: #fff;
+  padding: 50px;
+  text-align: center;
+  width: 640px;
+  height: 640px;
+  display: flex;
+  flex-direction: column;
+}
+
+.moduleBody p {
+  text-align: start;
+}
